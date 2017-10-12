@@ -40,13 +40,12 @@
                 </div>
                 <div class='row'>
                   <div class='col-md-3'>Events:</div>
-                  <div class='col-md-8'>
-                    <tbody>
-                      <tr *ngFor='let machineDetailEvent of machineDetail.events'>
-                        <td>{{ machineDetailEvent.timestamp | date:'medium'}}</td>
-                        <td>{{ machineDetailEvent.status }}</td>
-                      </tr>
-                    </tbody>
+                  <div class='col-md-9'>
+                    <div *ngFor='let machineDetailEvent of machineDetail.events;  let i=index'>
+                      <div *ngIf="i<11">
+                        {{ machineDetailEvent.timestamp | date:'medium'}}  &nbsp;&nbsp;&nbsp;&nbsp; {{ machineDetailEvent.status }}
+                      </div>
+                    </div>
                   </div>
                 </div>
             </div>
