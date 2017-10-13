@@ -23,3 +23,19 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 Before running the tests make sure you are serving the app via `ng serve`.
+
+
+## TODO
+`
+- Refactor MachineListComponent
+- Fix Socket events API
+- Release tagging / Continuous Integration
+- Fix existing Jasmin tests add more test using mock API response / Stub
+- Lazy component loading
+- Server sent events instead of socket
+- SASS instead CSS
+- CSP enabled
+- Sentry for FE monitoring
+- SpeedCurve for page response monitoring
+`
+

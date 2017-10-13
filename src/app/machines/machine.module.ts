@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { MachineListComponent } from './machine-list.component';
 import { MachineDetailComponent } from './machine-detail.component';
-import { ConvertToSpacesPipe } from '../shared/convert-to-spaces.pipe';
 import { RouterModule } from '@angular/router';
 import { MachineGuardService } from './machine-guard.service';
 import { MachineService } from './machine.service';
@@ -19,8 +18,7 @@ import { SharedModule } from '../shared/shared.module';
   ],
   declarations: [
     MachineListComponent,
-    MachineDetailComponent,
-    ConvertToSpacesPipe
+    MachineDetailComponent
   ],
   providers: [
     MachineService,
